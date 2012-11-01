@@ -1,7 +1,6 @@
 from __future__ import print_function
 
 import os
-import sys
 import re
 import numpy as np
 import matplotlib.pyplot as plt
@@ -9,7 +8,6 @@ import webbrowser as wb
 
 from itertools import groupby
 from inspect import getargspec
-from scipy.optimize import curve_fit
 from scipy.stats import fprob
 from scipy import stats
 from scipy.ndimage import imread
@@ -379,7 +377,7 @@ def plot_function(func, coef, xmin, xmax, num_vals=100, *args):
     x = np.linspace(0, 10, 10)
     y = [0.1, 1.3, 2.1, 3.2, 4.7, 5.6, 6.4, 7.5,9, 10.1]
 
-    fit = curve_fit(line_func, x, y)
+    fit = scipy.optimize.curve_fit(line_func, x, y)
     plot_function(line_func, fit[0], 0, 10)
     """
     a = getargspec(func)
