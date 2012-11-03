@@ -6,7 +6,7 @@
 * [ Curve Fitting](# Curve Fitting)
 * [ Mathematical Functions for Curve Fitting](# Mathematical Functions for Curve Fitting)
 * [ Statistics](# Statistics)
-<a id=" General I/O"></a>## General I/O
+<a id=" General I/O">## General I/O</a>
 
 ```
 import_file(filename, datatype='', *args, **kwargs)
@@ -70,7 +70,7 @@ savecsv(fname, seq, headers=None)
     
 ```
 
-<a id=" List Operations"></a>## List Operations
+<a id=" List Operations">## List Operations</a>
 
 ```
 all_indices(l, i)
@@ -149,7 +149,7 @@ natural_sort(seq)
     
 ```
 
-<a id="  Utilities"></a>##  Utilities
+<a id="  Utilities">##  Utilities</a>
 
 ```
 docs()
@@ -184,7 +184,7 @@ listcwd(startswith='', endswith='')
     
 ```
 
-<a id=" Plotting Convenience"></a>## Plotting Convenience
+<a id=" Plotting Convenience">## Plotting Convenience</a>
 
 ```
 date_plot(dates, data, *args, **kwargs)
@@ -232,7 +232,7 @@ plot_function(func, coef, xmin, xmax, num_vals=100, *args)
     
 ```
 
-<a id=" Curve Fitting"></a>## Curve Fitting
+<a id=" Curve Fitting">## Curve Fitting</a>
 
 ```
 fitline(x, y)
@@ -243,7 +243,7 @@ fitline(x, y)
     
 ```
 
-<a id=" Mathematical Functions for Curve Fitting"></a>## Mathematical Functions for Curve Fitting
+<a id=" Mathematical Functions for Curve Fitting">## Mathematical Functions for Curve Fitting</a>
 
 ```
 exp_func(x, a, b, c)
@@ -277,7 +277,7 @@ sin_func(x, a, w, phi)
     
 ```
 
-<a id=" Statistics"></a>## Statistics
+<a id=" Statistics">## Statistics</a>
 
 ```
 std(seq, *args, **kwargs)
