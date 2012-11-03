@@ -1,7 +1,21 @@
 # python-danutil
+## General I/O
+
+## List Operations
+
+##  Utilities
+
+## Plotting Convenience
+
+## Curve Fitting
+
+## Mathematical Functions for Curve Fitting
+
+## Statistics
+
 ### General I/O
 
-```python
+```
 import_file(filename, datatype='', *args, **kwargs)
 
     filename : string
@@ -15,7 +29,7 @@ import_file(filename, datatype='', *args, **kwargs)
     
 ```
 
-```python
+```
 print_table(input_list, headings=None, usetabs=False, fmt='%g')
 
     input_list : array like
@@ -33,7 +47,7 @@ print_table(input_list, headings=None, usetabs=False, fmt='%g')
     
 ```
 
-```python
+```
 savenpy(filename, X, delimiter=',')
 
     filename : string
@@ -46,7 +60,7 @@ savenpy(filename, X, delimiter=',')
     
 ```
 
-```python
+```
 savecsv(fname, seq, headers=None)
 
     fname : string
@@ -65,7 +79,7 @@ savecsv(fname, seq, headers=None)
 
 ### List Operations
 
-```python
+```
 all_indices(l, i)
 
     l : list
@@ -77,7 +91,7 @@ all_indices(l, i)
     
 ```
 
-```python
+```
 delete_duplicates(seq)
 
     seq : list
@@ -87,7 +101,7 @@ delete_duplicates(seq)
     
 ```
 
-```python
+```
 split(seq, key=None)
 
     seq : list
@@ -108,7 +122,7 @@ split(seq, key=None)
     
 ```
 
-```python
+```
 pack(*args)
 
     *args : list
@@ -120,7 +134,7 @@ pack(*args)
     
 ```
 
-```python
+```
 unpack(seq, column)
 
     seq : list
@@ -132,7 +146,7 @@ unpack(seq, column)
     
 ```
 
-```python
+```
 natural_sort(seq)
 
     seq : list
@@ -144,14 +158,14 @@ natural_sort(seq)
 
 ###  Utilities
 
-```python
+```
 docs()
 
     Opens a documentation browsers for numpy, scipy, matplotlib, and danutil.
     
 ```
 
-```python
+```
 isnumber(val)
 
     val : object
@@ -161,7 +175,7 @@ isnumber(val)
     
 ```
 
-```python
+```
 listcwd(startswith='', endswith='')
 
     starts : string
@@ -179,7 +193,7 @@ listcwd(startswith='', endswith='')
 
 ### Plotting Convenience
 
-```python
+```
 date_plot(dates, data, *args, **kwargs)
 
     dates : list
@@ -192,7 +206,7 @@ date_plot(dates, data, *args, **kwargs)
     
 ```
 
-```python
+```
 plot_function(func, coef, xmin, xmax, num_vals=100, *args)
 
     func : callable
@@ -227,7 +241,7 @@ plot_function(func, coef, xmin, xmax, num_vals=100, *args)
 
 ### Curve Fitting
 
-```python
+```
 fitline(x, y)
 
     Fits the data x, y to a line.
@@ -238,14 +252,14 @@ fitline(x, y)
 
 ### Mathematical Functions for Curve Fitting
 
-```python
+```
 exp_func(x, a, b, c)
 
     Returns a function of form: a*e^(b*x) + c
     
 ```
 
-```python
+```
 gaussian_func(x, a, b, c)
 
     aReturns a function of form: *e^((x-b)^2/2c^2)
@@ -256,14 +270,14 @@ gaussian_func(x, a, b, c)
     
 ```
 
-```python
+```
 line_func(x, m, b)
 
     Returns a function of form: m*x + b
     
 ```
 
-```python
+```
 sin_func(x, a, w, phi)
 
     aReturns a function of form: *sin(w*x + phi)
@@ -272,7 +286,7 @@ sin_func(x, a, w, phi)
 
 ### Statistics
 
-```python
+```
 std(seq, *args, **kwargs)
 
     seq : array
@@ -282,7 +296,7 @@ std(seq, *args, **kwargs)
     
 ```
 
-```python
+```
 ANOVA(object)
 
     Calculates the one-way ANOVA of passed samples.
