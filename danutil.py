@@ -296,7 +296,7 @@ def natural_sort(seq):
     alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
     seq.sort(key=alphanum_key) 
 
-###  Utilities
+### Utilities
 
 def docs():
     """
