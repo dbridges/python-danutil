@@ -7,7 +7,7 @@
 * [Mathematical Functions for Curve Fitting](#mathematical-functions-for-curve-fitting)
 * [Statistics](#statistics)
 
-# General I/O
+### General I/O
 ```
 import_file(filename, datatype='', *args, **kwargs)
 
@@ -71,7 +71,7 @@ savecsv(fname, seq, headers=None)
 ```
 
 
-# List Operations
+### List Operations
 ```
 all_indices(l, i)
 
@@ -150,7 +150,7 @@ natural_sort(seq)
 ```
 
 
-# Utilities
+### Utilities
 ```
 docs()
 
@@ -185,7 +185,7 @@ listcwd(startswith='', endswith='')
 ```
 
 
-# Plotting Convenience
+### Plotting Convenience
 ```
 date_plot(dates, data, *args, **kwargs)
 
@@ -233,7 +233,7 @@ plot_function(func, coef, xmin, xmax, num_vals=100, *args)
 ```
 
 
-# Curve Fitting
+### Curve Fitting
 ```
 fitline(x, y)
 
@@ -244,7 +244,7 @@ fitline(x, y)
 ```
 
 
-# Mathematical Functions for Curve Fitting
+### Mathematical Functions for Curve Fitting
 ```
 exp_func(x, a, b, c)
 
@@ -278,7 +278,7 @@ sin_func(x, a, w, phi)
 ```
 
 
-# Statistics
+### Statistics
 ```
 std(seq, *args, **kwargs)
 
