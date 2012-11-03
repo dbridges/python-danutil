@@ -1,5 +1,6 @@
 # python-danutil
-* [General I/O](#general-i/o)
+## Documentation 
+ Provides functions and classes in these general areas:* [General I/O](#general-i/o)
 * [List Operations](#list-operations)
 * [Utilities](#utilities)
 * [Plotting Convenience](#plotting-convenience)
