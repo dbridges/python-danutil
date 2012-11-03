@@ -1,6 +1,8 @@
 # python-danutil
+A collection of useful functions and classes for use in data analysis.
 ## Documentation 
- Provides functions and classes in these general areas:* [General I/O](#general-i/o)
+ python-danutil provides functions and classes in these general areas:
+* [General I/O](#general-i/o)
 * [List Operations](#list-operations)
 * [Utilities](#utilities)
 * [Plotting Convenience](#plotting-convenience)
