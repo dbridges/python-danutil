@@ -1,11 +1,11 @@
 # python-danutil
-* [ General I/O](#-general-i/o)
-* [ List Operations](#-list-operations)
-* [  Utilities](#--utilities)
-* [ Plotting Convenience](#-plotting-convenience)
-* [ Curve Fitting](#-curve-fitting)
-* [ Mathematical Functions for Curve Fitting](#-mathematical-functions-for-curve-fitting)
-* [ Statistics](#-statistics)
+* [General I/O](#general-i/o)
+* [List Operations](#list-operations)
+* [ Utilities](#-utilities)
+* [Plotting Convenience](#plotting-convenience)
+* [Curve Fitting](#curve-fitting)
+* [Mathematical Functions for Curve Fitting](#mathematical-functions-for-curve-fitting)
+* [Statistics](#statistics)
 
 ## General I/O
 ```
