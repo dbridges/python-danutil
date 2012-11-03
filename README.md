@@ -1,17 +1,17 @@
 # python-danutil
-## General I/O
+ General I/O
 
-## List Operations
+ List Operations
 
-##  Utilities
+  Utilities
 
-## Plotting Convenience
+ Plotting Convenience
 
-## Curve Fitting
+ Curve Fitting
 
-## Mathematical Functions for Curve Fitting
+ Mathematical Functions for Curve Fitting
 
-## Statistics
+ Statistics
 
 ### General I/O
 
