@@ -1,12 +1,12 @@
 # python-danutil
-* [ General I/O](#1)
-* [ List Operations](#6)
-* [  Utilities](#13)
-* [ Plotting Convenience](#17)
-* [ Curve Fitting](#20)
-* [ Mathematical Functions for Curve Fitting](#22)
-* [ Statistics](#27)
-<a id="1"></a>## General I/O
+* [ General I/O](#)
+* [ List Operations](#)
+* [  Utilities](#)
+* [ Plotting Convenience](#)
+* [ Curve Fitting](#)
+* [ Mathematical Functions for Curve Fitting](#)
+* [ Statistics](#)
+## General I/O
 
 ```
 import_file(filename, datatype='', *args, **kwargs)
@@ -70,7 +70,7 @@ savecsv(fname, seq, headers=None)
     
 ```
 
-<a id="6"></a>## List Operations
+## List Operations
 
 ```
 all_indices(l, i)
@@ -149,7 +149,7 @@ natural_sort(seq)
     
 ```
 
-<a id="13"></a>##  Utilities
+##  Utilities
 
 ```
 docs()
@@ -184,7 +184,7 @@ listcwd(startswith='', endswith='')
     
 ```
 
-<a id="17"></a>## Plotting Convenience
+## Plotting Convenience
 
 ```
 date_plot(dates, data, *args, **kwargs)
@@ -232,7 +232,7 @@ plot_function(func, coef, xmin, xmax, num_vals=100, *args)
     
 ```
 
-<a id="20"></a>## Curve Fitting
+## Curve Fitting
 
 ```
 fitline(x, y)
@@ -243,7 +243,7 @@ fitline(x, y)
     
 ```
 
-<a id="22"></a>## Mathematical Functions for Curve Fitting
+## Mathematical Functions for Curve Fitting
 
 ```
 exp_func(x, a, b, c)
@@ -277,7 +277,7 @@ sin_func(x, a, w, phi)
     
 ```
 
-<a id="27"></a>## Statistics
+## Statistics
 
 ```
 std(seq, *args, **kwargs)
