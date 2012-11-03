@@ -2,7 +2,7 @@
 ### General I/O
 
 ```python
-import_file()
+import_file(filename, datatype='', *args, **kwargs)
 
     filename : string
         File to import.
@@ -12,10 +12,11 @@ import_file()
 
     Imports text and images files, automatically seperating text into arrays
     based on the files extension, or optional type paramater.
-    ```
+    
+```
 
 ```python
-print_table()
+print_table(input_list, headings=None, usetabs=False, fmt='%g')
 
     input_list : array like
         2D list to print out in table form.
@@ -29,10 +30,11 @@ print_table()
 
     fmt : string
         Format string to use when printing numbers.
-    ```
+    
+```
 
 ```python
-savenpy()
+savenpy(filename, X, delimiter=',')
 
     filename : string
         Location to save file.
@@ -41,10 +43,11 @@ savenpy()
         Array to be written to file
 
     Saves a numpy array to file.
-    ```
+    
+```
 
 ```python
-savecsv()
+savecsv(fname, seq, headers=None)
 
     fname : string
         Location to save file.
@@ -57,12 +60,13 @@ savecsv()
 
     Writes a csv file with the string representation of the data in seq.
     Data does not have to be of the same data type.
-    ```
+    
+```
 
 ### List Operations
 
 ```python
-all_indices()
+all_indices(l, i)
 
     l : list
         list of items
@@ -70,19 +74,21 @@ all_indices()
         item to look for in list
 
     Returns a list of all indicies for item i.
-    ```
+    
+```
 
 ```python
-delete_duplicates()
+delete_duplicates(seq)
 
     seq : list
         The sequence to delete duplicates from.
 
     Returns a list with duplicates deleted from seq while maintaining ordering.
-    ```
+    
+```
 
 ```python
-split()
+split(seq, key=None)
 
     seq : list
         The sequence to split.
@@ -99,10 +105,11 @@ split()
     split(data, key=itemgetter(0))
     
     outputs: [[['a', 1, 2], ['a', 3, 4]], [['b', 1, 2]]]
-    ```
+    
+```
 
 ```python
-pack()
+pack(*args)
 
     *args : list
         A series of lists.
@@ -110,10 +117,11 @@ pack()
     pack(x, y) combines lists [x1, x2, x3], [y1, y2, y3] 
     into form [[x1, y1], [x2, y2], [x3, y3]]
     It is essentially just the builtin zip.
-    ```
+    
+```
 
 ```python
-unpack()
+unpack(seq, column)
 
     seq : list
         A packed list of form [[x1, y1], [x2, y2], [x3, y3]]
@@ -121,16 +129,18 @@ unpack()
     Extract column in packed list.
     With input seq = [[x1, y1], [x2, y2], [x3, y3]]
     unpack(seq, 0) returns [x1, x2, x3]
-    ```
+    
+```
 
 ```python
-natural_sort()
+natural_sort(seq)
 
     seq : list
         A list of strings to sort.
 
     Sorts the given sequence in place.
-    ```
+    
+```
 
 ###  Utilities
 
@@ -138,19 +148,21 @@ natural_sort()
 docs()
 
     Opens a documentation browsers for numpy, scipy, matplotlib, and danutil.
-    ```
+    
+```
 
 ```python
-isnumber()
+isnumber(val)
 
     val : object
         The object to be tested
 
     Returns True of val is an int, long, float, or complex number.
-    ```
+    
+```
 
 ```python
-listcwd()
+listcwd(startswith='', endswith='')
 
     starts : string
         Filter results such that they start with this string.
@@ -162,12 +174,13 @@ listcwd()
     
     Returns a list of files in the current working directory that
     start with 'starts' and end with 'ends'
-    ```
+    
+```
 
 ### Plotting Convenience
 
 ```python
-date_plot()
+date_plot(dates, data, *args, **kwargs)
 
     dates : list
         A 1D list of date strings.
@@ -176,10 +189,11 @@ date_plot()
         A 1D list of data corresponding to the values in dates.
     
     Plots dates vs. data.
-    ```
+    
+```
 
 ```python
-plot_function()
+plot_function(func, coef, xmin, xmax, num_vals=100, *args)
 
     func : callable
         The function to be plotted.
@@ -208,61 +222,68 @@ plot_function()
 
     fit = scipy.optimize.curve_fit(line_func, x, y)
     plot_function(line_func, fit[0], 0, 10)
-    ```
+    
+```
 
 ### Curve Fitting
 
 ```python
-fitline()
+fitline(x, y)
 
     Fits the data x, y to a line.
 
     Returns (slope, x_intercept, r_squared)
-    ```
+    
+```
 
 ### Mathematical Functions for Curve Fitting
 
 ```python
-exp_func()
+exp_func(x, a, b, c)
 
     Returns a function of form: a*e^(b*x) + c
-    ```
+    
+```
 
 ```python
-gaussian_func()
+gaussian_func(x, a, b, c)
 
     aReturns a function of form: *e^((x-b)^2/2c^2)
 
     a = 1/(sigma*sqrt(2*pi))    
     b = mu                      (expected value)
     c = sigma                   (standard deviation)
-    ```
+    
+```
 
 ```python
-line_func()
+line_func(x, m, b)
 
     Returns a function of form: m*x + b
-    ```
+    
+```
 
 ```python
-sin_func()
+sin_func(x, a, w, phi)
 
     aReturns a function of form: *sin(w*x + phi)
-    ```
+    
+```
 
 ### Statistics
 
 ```python
-std()
+std(seq, *args, **kwargs)
 
     seq : array
         The sequence to compute the standard deviation of.
 
     Returns the sample standard deviation of seq.
-    ```
+    
+```
 
 ```python
-ANOVA()
+ANOVA(object)
 
     Calculates the one-way ANOVA of passed samples.
 
@@ -278,5 +299,6 @@ ANOVA()
 
     Methods:
         self.summary()          Prints the ANOVA summary table.
-    ```
+    
+```
 
