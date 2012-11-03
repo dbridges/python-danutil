@@ -302,7 +302,7 @@ def docs():
     """
     Opens a documentation browsers for numpy, scipy, matplotlib, and danutil.
     """
-    wb.open('http://dl.dropbox.com/u/4497111/pylab.html')
+    wb.open('http://github.com/dbridges/python-danutil')
 
 def isnumber(val):
     """
